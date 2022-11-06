@@ -1,0 +1,35 @@
+$fonts-primary: 'PPNeueMontreal-Bold', 'PPNeueMontreal-Light', 'PPNeueMontreal-Medium', 'PPNeueMontreal-Regular', 'PPNeueMontreal-Thin';
+$fonts-secondary: 'PPEditorialNew-Bold', 'PPEditorialNew-Heavy', 'PPEditorialNew-Regular', 'PPEditorialNew-Thin', 'PPEditorialNew-Ultrabold', 'PPEditorialNew-Ultralight';
+
+
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
+    
+    @if $index {
+      @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+    
+    @return $string;
+  }
+
+  // primary font importation
+  @each $font-primary in $fonts-primary {
+    @font-face {
+        font-family: 'PPNeueMontreal';
+        font-weight: str-replace($font-primary, 'PPNeueMontreal-' , '');
+        src: url('./../../fonts/#{$font-primary}.ttf') format('truetype');
+        font-display: swap;
+    }
+  }
+  // secondary font importation
+
+  @each $font-secondary in $fonts-secondary {
+    @font-face {
+        font-family: 'PPEditorialNew';
+        font-weight: str-replace($font-secondary, 'PPEditorialNew-' , '');
+        src: url('./../../fonts/#{$font-secondary}.ttf') format('truetype');
+        font-display: swap;
+    }
+  }
+
+

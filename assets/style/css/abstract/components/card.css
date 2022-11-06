@@ -1,0 +1,36 @@
+.card-overlay {
+  aspect-ratio: 17/26;
+  @apply relative;
+  max-width: 300px;
+  overflow: hidden;
+}
+.card-overlay__image {
+  @apply absolute inset-0 z-[1];
+}
+.card-overlay__image img {
+  @apply w-full h-full object-cover object-center;
+}
+.card-overlay__image::before {
+  @apply absolute inset-0 bg-black opacity-20;
+}
+.card-overlay__body {
+  @apply absolute inset-0 z-[2] flex flex-col justify-end	items-start	p-1 transition;
+  transform: translateY(calc(100% - 4rem));
+  color: #fff;
+}
+.card-overlay__body--title {
+  @apply text-4xl capitalize m-0 mb-4;
+}
+.card-overlay__body--description {
+  @apply text-xs max-w-[50%];
+}
+.card-overlay__body--action {
+  @apply mt-auto mb-1;
+}
+.card-overlay.active {
+  aspect-ratio: 1;
+  width: 600px;
+}
+.card-overlay.active .card-overlay__body {
+  @apply translate-y-0;
+}

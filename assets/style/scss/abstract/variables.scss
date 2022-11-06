@@ -1,0 +1,32 @@
+// ---------------------------------
+// ------------- colors ------------
+// ---------------------------------
+
+$primaryColor: #fefefe;
+$textColor-primary: #000;
+$textColor-secondary: #fff;
+
+$buttonColor: $textColor-primary;
+$buttonColor-reverse: $textColor-secondary;
+
+// ---------------------------------
+// ------------- fonts -------------
+// ---------------------------------
+
+// font families
+
+$font-primary: 'PPNeueMontreal';
+$font-secondary: 'PPEditorialNew';
+
+// font sizes 
+
+$font-3xs: 1rem;
+$font-2xs: 1.16625rem;
+$font-xs: 1.333rem;
+$font-sm: 1.666rem;
+$font-md: 2.5rem;
+$font-lg: 2.916rem;
+$font-xl: 4.166rem;
+$font-2xl: 5.416rem;
+$font-3xl: 7.166rem;
+$font-4xl: 8.333rem;

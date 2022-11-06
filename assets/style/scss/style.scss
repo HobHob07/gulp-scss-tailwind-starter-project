@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './abstract/components/button.scss';
+@import './abstract/components/card.scss';
+@import './fonts.scss';

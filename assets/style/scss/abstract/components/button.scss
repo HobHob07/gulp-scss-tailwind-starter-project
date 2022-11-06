@@ -1,0 +1,27 @@
+@import './../variables.scss';
+.button {
+    border-color: $buttonColor;
+    @apply rounded-full border border-solid px-3 transition;
+    color: $buttonColor;
+
+    &-reverse {
+        border-color: $buttonColor-reverse;
+        color: $buttonColor-reverse;
+
+        &-active, &:hover {
+            background-color: $buttonColor-reverse;
+            border-color: $buttonColor;
+            color: $buttonColor;
+        }
+    }
+
+    &-active, &:hover {
+        background-color: $buttonColor;
+        color: $buttonColor-reverse;
+    }
+
+    &-uppercase{
+        @apply uppercase;
+    }
+
+}

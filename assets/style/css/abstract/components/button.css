@@ -1,0 +1,21 @@
+.button {
+  border-color: #000;
+  @apply rounded-full border border-solid px-3 transition;
+  color: #000;
+}
+.button-reverse {
+  border-color: #fff;
+  color: #fff;
+}
+.button-reverse-active, .button-reverse:hover {
+  background-color: #fff;
+  border-color: #000;
+  color: #000;
+}
+.button-active, .button:hover {
+  background-color: #000;
+  color: #fff;
+}
+.button-uppercase {
+  @apply uppercase;
+}

@@ -1,0 +1,44 @@
+
+@import './../variables.scss';
+
+
+.card{
+
+    &-overlay {
+        aspect-ratio: 17 / 26;
+        @apply relative;
+        max-width: 300px;
+        overflow: hidden;
+        &__image {
+            @apply absolute inset-0 z-[1];
+            img {
+                @apply w-full h-full object-cover object-center;
+            }
+            &::before {
+                @apply absolute inset-0 bg-black opacity-20;
+            }
+        }
+        &__body {
+            @apply absolute inset-0 z-[2] flex flex-col justify-end	items-start	p-1 transition ;
+            transform: translateY(calc(100% - 4rem));
+            color: $textColor-secondary;
+            &--title {
+                @apply text-4xl capitalize m-0 mb-4;
+            }
+            &--description {
+                @apply text-xs max-w-[50%];
+            }
+            &--action {
+                @apply mt-auto mb-1;
+            }
+        }
+
+        &.active {
+            aspect-ratio: 1;
+            width: 600px;
+            .card-overlay__body {
+                @apply translate-y-0;
+            }
+        }
+    }
+}

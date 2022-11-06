@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "PPNeueMontreal";
+  font-weight: "Bold";
+  src: url("./../../fonts/PPNeueMontreal-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PPNeueMontreal";
+  font-weight: "Light";
+  src: url("./../../fonts/PPNeueMontreal-Light.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PPNeueMontreal";
+  font-weight: "Medium";
+  src: url("./../../fonts/PPNeueMontreal-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PPNeueMontreal";
+  font-weight: "Regular";
+  src: url("./../../fonts/PPNeueMontreal-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PPNeueMontreal";
+  font-weight: "Thin";
+  src: url("./../../fonts/PPNeueMontreal-Thin.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PPEditorialNew";
+  font-weight: "Bold";
+  src: url("./../../fonts/PPEditorialNew-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PPEditorialNew";
+  font-weight: "Heavy";
+  src: url("./../../fonts/PPEditorialNew-Heavy.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PPEditorialNew";
+  font-weight: "Regular";
+  src: url("./../../fonts/PPEditorialNew-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PPEditorialNew";
+  font-weight: "Thin";
+  src: url("./../../fonts/PPEditorialNew-Thin.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PPEditorialNew";
+  font-weight: "Ultrabold";
+  src: url("./../../fonts/PPEditorialNew-Ultrabold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PPEditorialNew";
+  font-weight: "Ultralight";
+  src: url("./../../fonts/PPEditorialNew-Ultralight.ttf") format("truetype");
+  font-display: swap;
+}
